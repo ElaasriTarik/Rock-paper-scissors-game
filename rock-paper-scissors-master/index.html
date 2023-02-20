@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Rock, Paper, Scissors</title>
+
+
+ <link rel="stylesheet" href="style.css">
+ <script src="script.js" charset="utf-8" defer></script>
+</head>
+<body>
+
+
+    <div class="hero">
+       <header>
+         <h3>ROCK PAPER SCISSORS</h3>
+         <div class="scoreBoard">
+           <p>SCORE</p>
+           <h2 class="score">12</h2>
+         </div>
+       </header>
+       <main class="gameplay">
+         <div class="firstStage">
+          <div class="paperBox boxHover">
+            <img src="images/icon-paper.svg" alt="" class="choice paperChoice">
+          </div>
+          <div class="scissorsBox boxHover">
+          <img src="images/icon-scissors.svg" alt="" class="choice scissorsChoice">
+        </div>
+        <div class="rockBox boxHover">
+          <img src="images/icon-rock.svg" alt="" class="choice rockChoice">
+        </div>
+      </div>
+
+      <div class="secondStage">
+        <div class="pickedChoices">
+          <div class="userChoice picked">
+
+          </div>
+          <div class="robotChoice picked">
+
+          </div>
+        </div>
+        <div class="resultBox">
+          <h1 class="winCase">YOU LOSE</h1>
+          <button type="button" name="button" class="tryAgain">TRY AGAIN</button>
+        </div>
+      </div>
+
+
+
+       </main>
+       <footer class="displayRules">
+         <h2>RULES</h2>
+       </footer>
+       <div class="rulesBox">
+         <h2 class="rulesLabel">RULES</h2>
+         <img src="images/image-rules.svg" alt="rules image">
+         <div class="closeX">
+           <img src="images/icon-close.svg" alt="close" class="closeIcon">
+         </div>
+       </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
