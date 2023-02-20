@@ -26,7 +26,7 @@ choicesBoxes.forEach((item, i) => {
 
 function randomPick(user) {
   const randomImage = images[Math.floor(Math.random()*images.length)];
-  robotChoice.innerHTML = `<p class="thePicks">THE HOUSE PICKED</p> <img src=${randomImage} class="paperChoice choice afterChoice"/>`
+  robotChoice.innerHTML = `<p class="thePicks">ROBOT</p> <img src=${randomImage} class="paperChoice choice afterChoice"/>`
   const robot = robotChoice.children[1].src.slice(34, (robotChoice.children[1].src.length - 4))
   checkWin(user, robot)
 }
