@@ -56,9 +56,7 @@ function checkWin(user, robot) {
      robotChoice.style.border = "10px solid hsl(349, 70%, 56%)"
   }
   // check  fro  winner
-    if (user === robot) {
-     winCase.textContent = "DRAW"
-   } else if(user === "paper" && robot ===  "scissors"){
+    if(user === "paper" && robot ===  "scissors"){
      winCase.textContent = "YOU LOSE"
    }
    else if(user === "paper" && robot === "rock"){
@@ -76,6 +74,9 @@ function checkWin(user, robot) {
    else if(user === "scissors" && robot === "rock"){
      winCase.textContent = "YOU LOSE"
    }
+    else {
+     winCase.textContent = "DRAW"
+   } 
      if (winCase.textContent === "YOU WIN") {
       userChoice.style.boxShadow = "0 0 10px 10px hsl(217, 16%, 45%)"
       userScore+= 3;
